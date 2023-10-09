@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+} 
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.text {
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    color: #fff;
+    margin-top: auto;
+    text-align: center;
+}
+
+.cards {
+    justify-content: center;
+    width: 170%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card {
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://i.pinimg.com/564x/36/c6/06/36c60651a9727d7602144f7246b0aa62.jpg');
+    height: 530px;
+    width: 300px;
+
+}
+
+.banner-2 {
+    background-image: url('https://i.pinimg.com/564x/66/60/6d/66606d97668dc9d2f98ab2771e40e475.jpg');
+    height: 530px;
+    width: 300px;
+    background-position: 45% 45%;
+}
+
+.banner-3 {
+    background-image: url('https://i.pinimg.com/564x/67/be/88/67be886bd854a603e9f5ac3f10d7d229.jpg');
+    height: 530px;
+    width: 300px;
+    background-position: 45% 45%;
+}
+
+.banner-4 {
+    background-image: url('https://i.pinimg.com/564x/4a/ea/9d/4aea9d41ba66fd69f54f1b707e039586.jpg');
+    height: 530px;
+    width: 300px;
+    background-position: 65% 50%;
+}
+
+.banner-5 {
+    background-image: url('https://i.pinimg.com/564x/26/81/41/2681416ea19b7ed35c2e15004fe8ee29.jpg');
+    height: 530px;
+    width: 300px;
+    background-position: 45% 45%;
+}
+
+.banner-6 {
+    background-image: url('https://i.pinimg.com/564x/71/79/e1/7179e110f63ed703f387969edc9777cd.jpg');
+    height: 530px;
+    width: 300px;
+    background-position: 45% 20%;
+}
+
+.banner-7 {
+    background-image: url('https://i.pinimg.com/564x/49/32/89/4932894f130e59d79f81295499ba15e8.jpg');
+    height: 530px;
+    width: 300px;
+    background-position: 45% 20%;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+.actor-cards-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cards {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    }
+
+.card > texto {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    background-size: cover;
+    height: 600px;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.texto {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: none;
+}
+
+.button {
+    width: 100%;
+    margin-top: 30px;
+    }
+    
+.cards-content {
+    grid-template-columns: 1fr;
+}    
+}
